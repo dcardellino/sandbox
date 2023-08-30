@@ -12,7 +12,7 @@ jobs:
     env:
       NAME: ${{ secrets.SECRET_NAME }}
     env:
-      PUBLIC_NAME: ${{ env.PUBLIC_NAME }}
+      PUBLIC_NAME: ${{ env.NONSECRET_NAME }}
 
     steps:
       - name: DEBUG
