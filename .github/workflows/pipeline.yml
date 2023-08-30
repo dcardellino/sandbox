@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NAME: Gurkenhut
+      NAME: ${{ secrets.SECRET_NAME }}
 
     steps:
       - name: DEBUG
