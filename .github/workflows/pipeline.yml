@@ -12,4 +12,4 @@ jobs:
 
     steps:
       - name: DEBUG
-        run: echo "Hello W0rld" ${{env.NAME}}
+        run: echo $NAME
