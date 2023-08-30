@@ -16,4 +16,4 @@ jobs:
       - name: DEBUG
         run: echo $NAME
       - name: DEBUG2
-        run: "echo ${{ env.NONSECRET_NAME }}"
+        run: "echo ${{ vars.NONSECRET_NAME }}"
