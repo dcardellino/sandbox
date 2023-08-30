@@ -12,4 +12,4 @@ jobs:
 
     steps:
       - name: DEBUG
-        run: echo "Hello W0rld ${{secrets.NAME}}"
+        run: echo "Hello W0rld $NAME"
