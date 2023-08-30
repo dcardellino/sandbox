@@ -11,7 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NAME: ${{ secrets.SECRET_NAME }}
+    env:
+      PUBLIC_NAME: ${{ env.PUBLIC_NAME }}
 
     steps:
       - name: DEBUG
         run: echo $NAME
+      - name: DEBUG2
+        run: echo $PUBLIC_NAME
