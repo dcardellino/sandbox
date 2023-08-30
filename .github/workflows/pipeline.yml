@@ -11,10 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NAME: ${{ secrets.SECRET_NAME }}
-      PUBLIC_NAME: ${{ env.NONSECRET_NAME }}
 
     steps:
       - name: DEBUG
         run: echo $NAME
       - name: DEBUG2
-        run: echo $PUBLIC_NAME
+        run: echo $NONSECRET_NAME
